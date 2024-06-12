@@ -22,4 +22,11 @@ $(document).ready(function() {
         var target = $(this).attr('href');
         $.fn.fullpage.moveTo(target.substring(1));
     });
+
+    // Preloader
+    $(window).on('load', function() {
+        $('#preloader').fadeOut('slow', function() {
+            $(this).remove();
+        });
+    });
 });
