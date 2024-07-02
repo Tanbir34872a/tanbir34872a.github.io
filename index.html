@@ -1,106 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
     <title>Tanbir Yousuf</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <h1>Loading</h1>
-    </div>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://rajshekhar26.github.io/cleanfolio-minimal" class="link"
+          >TY.</a
+        >
+      </h3>
 
-    <header>
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Tanbir Yousuf</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hello">Hello</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
     </header>
 
-    <div id="fullpage">
-        <section class="section" id="hello">
-            <div class="intro">
-                <h1>A passionate CSE graduate with a knack for solving problems and mastering new technologies.</h1>
-                <img src="public/pic.jpg" alt="Tanbir Yousuf" class="profile-pic">
-            </div>
-        </section>
-        <section class="section" id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I am Tanbir Yousuf, a soon-to-be graduate with a Bachelor of Science in Computer Science and Engineering from the American International University Bangladesh. As I embark on my professional journey, I am actively seeking opportunities to apply my diverse skill set and passion for technology...</p>
-            </div>
-        </section>
-        <section class="section" id="education">
-            <div class="container">
-                <h2>Education</h2>
-                <ul>
-                    <li>BSc in CSE, American International University Bangladesh, 2020-2024</li>
-                    <li>A Level, Bangladesh International School (English Section), Jeddah, 2020</li>
-                    <li>IGCSE, Bangladesh International School (English Section), Jeddah, 2018</li>
-                </ul>
-            </div>
-        </section>
-        <section class="section" id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <p>HTML, CSS, JavaScript, NEXT.js, NEST.js, C++, C#, .NET, PHP, Java, TensorFlow, Adobe Suite, Office Tools</p>
-            </div>
-        </section>
-        <section class="section" id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <ul>
-                    <li>Project with NEXT.js and NEST.js</li>
-                    <li>Project with PHP</li>
-                    <li>Project with C# and .NET framework</li>
-                    <li>Project with Java</li>
-                    <li>Small projects with C++ and Python</li>
-                    <li>Tangible user interface with Arduino UNO</li>
-                </ul>
-            </div>
-        </section>
-        <section class="section" id="hobbies">
-            <div class="container">
-                <h2>Hobbies</h2>
-                <p>Gaming, Calligraphy, Walking/Exploring</p>
-            </div>
-        </section>
-        <section class="section" id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Email: tanbir.iweufh@outlook.com</p>
-                <ul class="social-links">
-                    <li><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://www.facebook.com/your-profile" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a></li>
-                </ul>
-            </div>
-        </section>
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Tanbir Yousuf.</span></h1>
+        <h2 class="about__role">A Full Stack Developer.</h2>
+        <p class="about__desc">
+            As a recent Computer Science and Engineering graduate, I am excited to embark on a 
+            career journey filled with innovation and growth. With a passion for problem-solving and a
+            knack for mastering new technologies, I'm eager to contribute my skills to a dynamic team
+            where collaboration and creativity thrive. Let us build something remarkable together!
+        </p>
+
+        <div class="about__contact center">
+          <a href="/Asset/Tanbir Yousuf's CV.pdf" 
+          target="_blank"
+          >
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/Tanbir34872a"
+            aria-label="github"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/Tanbir34872a"
+            aria-label="linkedin"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Project 1</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Project 2</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Project 3</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">SCSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">TypeScript</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Redux</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Material UI</li>
+          <li class="skills__list-item btn btn--plain">Jest</li>
+          <li class="skills__list-item btn btn--plain">Enzyme</li>
+          <li class="skills__list-item btn btn--plain">CI/CD</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:rjshekhar.official@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/rajshekhar26/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        Thank You Raj Shekhar for this beautiful Template
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="scripts.js"></script>
-</body>
+    <script src="./scripts.js"></script>
+  </body>
 </html>
