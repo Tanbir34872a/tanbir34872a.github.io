@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes orbital{
+  from {
+    transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
+  } to {
+    transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
+  }
+}
+
