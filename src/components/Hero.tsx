@@ -111,7 +111,7 @@ export default function Hello() {
         </div>
         <div className="flex space-x-4 mt-4 border-[#f3f3f3] border-2 rounded-3xl p-1 h-10 flex-row justify-center items-center object-fill">
           {/* <a href="tel:+8801609086811" target="_blank" rel="noreferrer" className=''> */}
-            <Image src="/logos/phone-white.png" alt="Telephone" width={50} height={10} className='object-fill' />
+            {/* <Image src="/logos/phone-white.png" alt="Telephone" width={50} height={10} className='object-fill' /> */}
             <p>Check my Resume</p>
           {/* </a> */}
         </div>
