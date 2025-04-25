@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+html, body {
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+@theme {
+  --color-white-50: #d9d9d9;
+
+}
